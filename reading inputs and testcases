@@ -32,7 +32,7 @@ class TestClass {
     	
     	
     	
-    	/* modifying and outputting on the basis of inputs
+    	/* modifying and outputting on the basis of multiple inputs
     	
     
     	 for (int i = 0; i < N; i++) 
