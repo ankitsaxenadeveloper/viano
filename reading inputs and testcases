@@ -52,7 +52,7 @@ class TestClass {
 
           */
           
-          /* Arraypasing and modification and returning arrays
+          /* Array passing and modification and returning arrays
           static int[] modify( int[] kas,int n)
 	{
 	 	for( int j=0;j<n;j++)
@@ -72,7 +72,41 @@ class TestClass {
 	 		{
 	 			System.out.println(kas1[j]);
 	 		}
+	}//EOM
         
+       */
+       
+       
+       /* converting inputs into an array, modifying it and then displaying 
+       
+       	static int[] modify( int[] kas)
+	{
+	 	for( int j=0;j<kas.length;j++)
+	 		{
+	 			++kas[j];
+	 		}	 	
+	 		return kas;	 
+	}
+	
+    public static void main(String args[] ) throws Exception {
+       
+    		   BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        		 StringTokenizer  st=new StringTokenizer(br.readLine());
+        		 int testcases[]=new int[st.countTokens()];
+        		 
+        		 int j=0;
+       			 while(st.hasMoreTokens()) 
+       			 	{ 
+						testcases[j++]=Integer.parseInt(st.nextToken());
+       			 	}
+ 	
+        		int  kas1[]=modify(testcases);
+      		    for( int k=0;k<kas1.length;k++)
+	 				{
+	 					System.out.print(kas1[k]+"\t");
+	 				}               
+    }//EOM
+       
        */
     }
 }
