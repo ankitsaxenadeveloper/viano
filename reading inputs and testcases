@@ -15,7 +15,7 @@ class TestClass {
         
         int testcases[]=new int[N];
        
-        
+        //reading inputs
         for (int i = 0; i < N; i++) 
         	{
           
@@ -32,7 +32,7 @@ class TestClass {
     	
     	
     	
-    	/* outputing on the basis of inputs
+    	/* modifying and outputting on the basis of inputs
     	
     
     	 for (int i = 0; i < N; i++) 
@@ -51,5 +51,28 @@ class TestClass {
     	
 
           */
+          
+          /* Arraypasing and modification and returning arrays
+          static int[] modify( int[] kas,int n)
+	{
+	 	for( int j=0;j<n;j++)
+	 		{
+	 	          	++kas[j];
+	 		}
+	 		return kas;
+	 
+	}
+	
+    public static void main(String args[] ) throws Exception {
+       
+      int n=3;
+        int testcases[]=new int[]{1,2,3};
+        int  kas1[]=modify(testcases,n);
+        for( int j=0;j<n;j++)
+	 		{
+	 			System.out.println(kas1[j]);
+	 		}
+        
+       */
     }
 }
