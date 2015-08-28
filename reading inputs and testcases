@@ -108,5 +108,44 @@ class TestClass {
     }//EOM
        
        */
+       
+       
+       
+       /* reading number of test cases from  first line and then converting other multiple lines into arrays passing as function and modifying
+       * and displaying it
+       static int[] modify( int[] kas)
+	{
+	 	for( int j=0;j<kas.length;j++)
+	 		{
+	 			++kas[j];
+	 		}	 	
+	 		return kas;	 
+	}
+	
+    public static void main(String args[] ) throws Exception {
+       
+    		   BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    		    int N = Integer.parseInt(br.readLine());
+    		    for(int i=0;i<N;i++)
+    		    {
+        		 	StringTokenizer  st=new StringTokenizer(br.readLine());
+        		 	int testcases[]=new int[st.countTokens()];
+        		 
+        		 	int j=0;
+       			 	while(st.hasMoreTokens()) 
+		       			 	{ 
+								testcases[j++]=Integer.parseInt(st.nextToken());
+       			 			}
+ 	
+        			int  kas1[]=modify(testcases);
+      		    	for( int k=0;k<kas1.length;k++)
+		 					{
+	 							System.out.print(kas1[k]+"\t");
+	 						}      
+	 				System.out.println("");
+    		    }
+    }//EOM
+       
+       */
     }
 }
