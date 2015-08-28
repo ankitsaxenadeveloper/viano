@@ -34,29 +34,7 @@ class TestClass {
     	
     	/* outputing on the basis of inputs
     	
-    	/* IMPORTANT: class must not be public. */
-
- //* uncomment this if you want to read input.
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer; 
-
-
-class TestClass {
-    public static void main(String args[] ) throws Exception {
-       
-       //  * Read input from stdin and provide input before running
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        int N = Integer.parseInt(br.readLine());
-        
-        int testcases[]=new int[N];
-       
-      
-     
-    		
-    	/* o/p on the basis of i/p(s)
+    
     	 for (int i = 0; i < N; i++) 
         	{
           
